@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day #2</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <h1>Exercise:1</h1>
+    <p id="my_test_id">Do you know what is waiting for you?</p>
+    <button type="button" onclick='document.getElementById("my_test_id").innerHTML="THIS IS TIME TO SHOW UP"'>OBSERVE</button>
+
+    <h1>Exercise:2</h1>
+    
+    <div class="align-container">
+        <div id="i.jpg">
+            <img id="image" src="images/Student1.jpg" alt="Student Image" height="20%" width="200">
+        </div>
+        <ul>
+            <li><button type="button" onclick='document.getElementById("image").src="images/Student1.jpg";'>Student 1</button></li>
+            <li><button type="button" onclick='document.getElementById("image").src="images/Student2.jpg";'>Student 2</button></li>
+            <li><button type="button" onclick='document.getElementById("image").src="images/Student3.jpg";'>Student 3</button></li>
+        </ul>
+    </div>
+
+    <h1>Exercise: 3</h1>
+    
+    <p id="p1">This is what is waiting for you</p>
+    <button type="button" onclick="document.getElementById('p1').style.fontSize='30px'">Increase</button>
+    <button type="button" onclick="document.getElementById('p1').style.fontSize='10px'">Decrease</button>
+
+    <h1>Exercise 4</h1>
+    <p>click the following button in order to get an alert message</p>
+    <button onclick="alert('Hello How are you ?')">Alert me</button>
+    
+    <h1>Exercise 5</h1>
+    <!-- JavaScript Variables -->
+<script>
+    const x = 9, y = 8, z = 7;
+    const a = x - y;
+    const b = y + z;
+
+    // Display values in the HTML
+    document.write(`<p>First value is x: ${x}</p>`);
+    document.write(`<p>Second value is y: ${y}</p>`);
+    document.write(`<p>Third value is z: ${z}</p>`);
+    document.write(`<p>The result of x - y is a: ${a}</p>`);
+    document.write(`<p>The result of y + z is b: ${b}</p>`);
+</script>
+</body>
+</body>
+</html>
