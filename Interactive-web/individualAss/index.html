@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Assignment #2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .introduction {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Individual Assignment #2 <br> for Ninshuti Poli Ndiramiye, 222002045 on Interactive Web Development</h1>
+
+    <div class="introduction">
+        <h2>Introduction</h2>
+        <p>This assignment is composed of 50 hands-on practical exercises for students to practice JavaScript, covering objects, arrays, strings, HTML elements, and other key elements. These exercises will provide a comprehensive introduction to various JavaScript concepts, helping students improve their coding skills.</p>
+    </div>
+    <!-- exercise 1 -->
+    <h2>1. An array of 20 numbers and a function to find the sum of all numbers.</h2>
+    <p>
+        <button onclick="sumArray()">Show Answer</button>
+        <span id="answer1"></span>    
+    </p>
+    <!-- Exercise 2 -->
+    <h2>2. A function to find the largest number in an array of 20 numbers.</h2>
+    <p>
+        <button onclick="findLargest()">Show Answer</button>
+        <span id="answer2"></span>    
+    </p>
+    <!-- Exercise 3 -->
+    <h2>3. A function to sort an array of 20 numbers in ascending order.</h2>
+    <p>
+        ```javascript
+        function sortArray(arr) {
+            return arr.sort((a, b) => a - b);
+        }
+        
+        console.log(sortArray(numbers));
+        ```
+    </p>
+
+    <!-- Exercise 4 -->
+    <h2>4. A function to reverse an array of 20 numbers.</h2>
+    <p>
+        ```javascript
+        function reverseArray(arr) {
+            return arr.reverse();
+        }
+        
+        console.log(reverseArray(numbers));
+        ```
+    </p>
+
+    <!-- Exercise 5 -->
+    <h2>5. A function that takes an array of 20 numbers and returns only even numbers.</h2>
+    <p>
+        ```javascript
+        function getEvenNumbers(arr) {
+            return arr.filter(num => num % 2 === 0);
+        }
+        
+        console.log(getEvenNumbers(numbers));
+        ```
+    </p>
+
+    <!-- Exercise 6 -->
+    <h2>6. A function that takes an array of 20 numbers and returns only odd numbers.</h2>
+    <p>
+        ```javascript
+        function getOddNumbers(arr) {
+            return arr.filter(num => num % 2 !== 0);
+        }
+        
+        console.log(getOddNumbers(numbers));
+        ```
+    </p>
+
+    <!-- Exercise 7 -->
+    <h2>7. A function that takes an array of 20 numbers and returns the average of those numbers.</h2>
+    <p>
+        ```javascript
+        function averageArray(arr) {
+            const sum = sumArray(arr);
+            return sum / arr.length;
+        }
+        
+        console.log(averageArray(numbers));
+        ```
+    </p>
+
+    <!-- Exercise 8 -->
+    <h2>8. A function to remove duplicates from an array of 20 numbers.</h2>
+    <p>
+       ```javascript
+       function removeDuplicates(arr) {
+           return [...new Set(arr)];
+       }
+       
+       console.log(removeDuplicates(numbers));
+       ```
+   </p>
+
+   <!-- Exercise 9 -->
+   <h2>9. A function that takes an array of 20 numbers and returns the median value.</h2>
+   <p>
+       ```javascript
+       function medianArray(arr) {
+           const sorted = sortArray(arr);
+           const mid = Math.floor(sorted.length / 2);
+           return sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+       }
+       
+       console.log(medianArray(numbers));
+       ```
+   </p>
+
+   <!-- Exercise 10 -->
+   <h2>10. A function to multiply all elements in an array of 20 numbers by 2.</h2>
+   <p>
+       ```javascript
+       function multiplyByTwo(arr) {
+           return arr.map(num => num * 2);
+       }
+       
+       console.log(multiplyByTwo(numbers));
+       ```
+   </p>
+<script src="./answers.js"></script>
+</body>
+</html>
