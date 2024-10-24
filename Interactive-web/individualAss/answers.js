@@ -16,3 +16,13 @@ function findLargest() {
     
     document.getElementById('answer2').innerHTML = ` The largest number is: ${largest}`;
 }
+//question 3
+function displaySortedArray() {
+    const numbers = [20, 15, 8, 12, 5, 1, 19, 3, 14, 7, 10, 13, 18, 6, 17, 4, 2, 16, 11, 9]; // Example array
+    const originalArray = [...numbers]; 
+    numbers.sort((a, b) => a - b);
+    
+    // Display the original and sorted arrays
+    document.getElementById('original').innerHTML = `Original Array: ${originalArray.join(', ')}`;
+    document.getElementById('sorted').innerHTML = `Sorted Array: ${numbers.join(', ')}`;
+}
