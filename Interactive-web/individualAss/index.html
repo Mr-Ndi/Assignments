@@ -4,64 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Individual Assignment #2</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            text-align: center;
-        }
-        h2 {
-            color: #2c3e50;
-        }
-        p {
-            margin-bottom: 20px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .introduction {
-            margin-bottom: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-    <h1>Individual Assignment #2 <br> for Ninshuti Poli Ndiramiye, 222002045 on Interactive Web Development</h1>
+    <h1>Individual Assignment #2 <br> for <INSERT YOUR NAME> on Interactive Web Development</h1>
 
     <div class="introduction">
         <h2>Introduction</h2>
         <p>This assignment is composed of 50 hands-on practical exercises for students to practice JavaScript, covering objects, arrays, strings, HTML elements, and other key elements. These exercises will provide a comprehensive introduction to various JavaScript concepts, helping students improve their coding skills.</p>
     </div>
 
-    <!-- Exercises -->
     <div id="exercises">
-        <!-- Exercise 1 -->
-        <h2>1. An array of 20 numbers and a function to find the sum of all numbers.</h2>
-        <p>
-            <button onclick="sumArray()">Show Answer</button>
-            <span id="answer1"></span>    
-        </p>
+        <h2>1. Create an array of 20 numbers and write a function to find the sum of all numbers.</h2>
+        <button onclick="sumArray()">Show Answer</button>
+        <span id="answer1"></span>
 
-        <!-- Exercise 2 -->
         <h2>2. A function to find the largest number in an array of 20 numbers.</h2>
-        <p>
-            <button onclick="findLargest()">Show Answer</button>
-            <span id="answer2"></span>    
-        </p>
+        <button onclick="findLargest()">Show Answer</button>
+        <span id="answer2"></span>
 
-        <!-- Exercise 3 -->
         <h2>3. A function to sort an array of 20 numbers in ascending order.</h2>
-        <p>
-            <button onclick="displaySortedArray()">Show Sorted Array</button>
-        </p>
-        <p id="originalSorted"></p> 
-        <p id="sortedArray"></p>
-
+        <button onclick="sortArray()">Show Answer</button>
+        <span id="answer3"></span>
         <!-- Exercise 4 -->
         <h2>4. A function to reverse an array of 20 numbers.</h2>
         <p>
@@ -70,340 +35,201 @@
         <p id="originalReversed"></p> 
         <p id="reversedArray"></p>
 
-        <!-- Exercise 5 -->
         <h2>5. A function that takes an array of 20 numbers and returns only even numbers.</h2>
-        <p>
-            <button onclick="getEvenNumbers()">Show Even Numbers</button>
-            <span id="evenNumbers"></span>    
-        </p>
+        <button onclick="getEvenNumbers()">Show Answer</button>
+        <span id="answer5"></span>
 
-        <!-- Exercise 6 -->
         <h2>6. A function that takes an array of 20 numbers and returns only odd numbers.</h2>
-        <p>
-            <button onclick="getOddNumbers()">Show Odd Numbers</button>
-            <span id="oddNumbers"></span>    
-        </p>
+        <button onclick="getOddNumbers()">Show Answer</button>
+        <span id="answer6"></span>
 
-        <!-- Exercise 7 -->
         <h2>7. A function that takes an array of 20 numbers and returns the average of those numbers.</h2>
-        <p>
-            <button onclick="averageArray()">Show Average</button>
-            <span id="average"></span>    
-        </p>
+        <button onclick="averageArray()">Show Answer</button>
+        <span id="answer7"></span>
 
-        <!-- Exercise 8 -->
         <h2>8. A function to remove duplicates from an array of 20 numbers.</h2>
-        <p>
-            <button onclick="removeDuplicates()">Show Unique Numbers</button>
-            <span id="uniqueNumbers"></span>    
-        </p>
+        <button onclick="removeDuplicates()">Show Answer</button>
+        <span id="answer8"></span>
 
-        <!-- Exercise 9 -->
         <h2>9. A function that takes an array of 20 numbers and returns the median value.</h2>
-        <p>
-            <button onclick="medianArray()">Show Median</button>
-            <span id="medianValue"></span>    
-        </p>
+        <button onclick="medianArray()">Show Answer</button>
+        <span id="answer9"></span>
 
-        <!-- Exercise 10 -->
         <h2>10. A function to multiply all elements in an array of 20 numbers by 2.</h2>
-        <p>
-            <button onclick="multiplyByTwo()">Show Multiplied Array</button>
-            <span id="multipliedArray"></span>    
-        </p>
+        <button onclick="multiplyByTwo()">Show Answer</button>
+        <span id="answer10"></span>
 
-        <!-- Exercise 11 -->
-        <h2>11. Create an array of 20 names and print each name on a new line.</h2>
-        <p>
-            <button onclick="printNames()">Show Names</button>
-            <span id="namesList"></span>    
-        </p>
+        <h2>11. Create an array of 20 names and write a function to print each name on a new line.</h2>
+        <button onclick="printNames()">Show Answer</button>
+        <span id="answer11"></span>
 
-        <!-- Exercise 12 -->
-        <h2>12. Sort an array of 20 names alphabetically.</h2>
-        <p>
-            <button onclick="sortNames()">Show Sorted Names</button>
-            <span id="sortedNamesList"></span>    
-        </p>
+        <h2>12. A function to sort an array of 20 names alphabetically.</h2>
+        <button onclick="sortNames()">Show Answer</button>
+        <span id="answer12"></span>
 
-        <!-- Exercise 13 -->
-        <h2>13. Check if a specific name exists in an array of 20 names.</h2>
-        <p>
-            <input type="text" id="nameCheck" placeholder="Enter name to check">
-            <button onclick="checkName()">Check Name</button>
-            <span id="nameCheckResult"></span>    
-        </p>
+        <h2>13. A function that checks if a specific name exists in an array of 20 names and returns true or false.</h2>
+        <input type="text" id="nameCheck" placeholder="Enter name to check">
+        <button onclick="checkName()">Show Answer</button>
+        <span id="answer13"></span>
 
-        <!-- Exercise 14 -->
-        <h2>14. Find the longest name in an array of 20 names.</h2>
-        <p>
-            <button onclick="findLongestName()">Show Longest Name</button>
-            <span id="longestName"></span>    
-        </p>
+        <h2>14. A function to find the longest name in an array of 20 names.</h2>
+        <button onclick="findLongestName()">Show Answer</button>
+        <span id="answer14"></span>
 
-        <!-- Exercise 15 -->
-        <h2>15. Find names that start with a specific letter in an array of 20 names.</h2>
-        <p>
-            <input type="text" id="letterInput" placeholder="Enter letter">
-            <button onclick="findNamesStartingWith()">Show Names</button>
-            <span id="namesStartingWith"></span>    
-        </p>
+        <h2>15. A function to find names that start with a specific letter in an array of 20 names.</h2>
+        <input type="text" id="letterInput" placeholder="Enter letter">
+        <button onclick="findNamesStartingWith()">Show Answer</button>
+        <span id="answer15"></span>
 
-        <!-- Exercise 16 -->
-        <h2>16. Convert all names to uppercase in an array of 20 names.</h2>
-        <p>
-            <button onclick="convertNamesToUppercase()">Show Uppercase Names</button>
-            <span id="uppercaseNames"></span>    
-        </p>
+        <h2>16. A function to convert all names to uppercase in an array of 20 names.</h2>
+        <button onclick="convertNamesToUppercase()">Show Answer</button>
+        <span id="answer16"></span>
 
-        <!-- Exercise 17 -->
-        <h2>17. Remove a specific name from an array of 20 names.</h2>
-        <p>
-            <input type="text" id="removeNameInput" placeholder="Enter name to remove">
-            <button onclick="removeName()">Remove Name</button>
-            <span id="removedNameResult"></span>    
-        </p>
+        <h2>17. A function to remove a specific name from an array of 20 names.</h2>
+        <input type="text" id="removeNameInput" placeholder="Enter name to remove">
+        <button onclick="removeName()">Show Answer</button>
+        <span id="answer17"></span>
 
-        <!-- Exercise 18 -->
-        <h2>18. Count how many names contain the letter "a".</h2>
-        <p>
-            <button onclick="countNamesWithA()">Show Count</button>
-            <span id="countWithA"></span>    
-        </p>
+        <h2>18. A function to count how many names contain the letter "a" in an array of 20 names.</h2>
+        <button onclick="countNamesWithA()">Show Answer</button>
+        <span id="answer18"></span>
 
-        <!-- Exercise 19 -->
-        <h2>19. Concatenate all names into a single string, separated by commas.</h2>
-        <p>
-            <button onclick="concatenateNames()">Show Concatenated Names</button>
-            <span id="concatenatedNames"></span>    
-        </p>
+        <h2>19. A function to concatenate all names in an array of 20 names into a single string, separated by commas.</h2>
+        <button onclick="concatenateNames()">Show Answer</button>
+        <span id="answer19"></span>
 
-        <!-- Exercise 20 -->
-        <h2>20. Reverse the order of an array of 20 names.</h2>
-        <p>
-            <button onclick="reverseNames()">Show Reversed Names</button>
-            <span id="reversedNamesList"></span>    
-        </p>
+        <h2>20. A function to reverse the order of an array of 20 names.</h2>
+        <button onclick="reverseNames()">Show Answer</button>
+        <span id="answer20"></span>
 
-        <!-- Objects -->
-        <h2>21. Create a JavaScript object that represents a person.</h2>
-        <p>
-            <button onclick="createPersonObject()">Show Person Object</button>
-            <span id="personObject"></span>    
-        </p>
+        <h2>21. Create a JavaScript object that represents a person (with properties: name, age, and occupation).</h2>
+        <button onclick="createPersonObject()">Show Answer</button>
+        <span id="answer21"></span>
 
-        <!-- Exercise 22 -->
-        <h2>22. Format a string with person information.</h2>
-        <p>
-            <button onclick="formatPersonInfo()">Show Formatted Info</button>
-            <span id="formattedInfo"></span>    
-        </p>
+        <h2>22. A function that takes a person object and returns a formatted string with their information.</h2>
+        <button onclick="formatPersonInfo()">Show Answer</button>
+        <span id="answer22"></span>
 
-        <!-- Exercise 23 -->
-        <h2>23. Add a new property to an existing object.</h2>
-        <p>
-            <button onclick="addProperty()">Add Property</button>
-            <span id="newPropertyResult"></span>    
-        </p>
+        <h2>23. A function to add a new property to an existing object.</h2>
+        <button onclick="addProperty()">Show Answer</button>
+        <span id="answer23"></span>
 
-        <!-- Exercise 24 -->
-        <h2>24. Remove a property from an existing object.</h2>
-        <p>
-            <button onclick="removeProperty()">Remove Property</button>
-            <span id="removedPropertyResult"></span>    
-        </p>
+        <h2>24. A function to remove a property from an existing object.</h2>
+        <button onclick="removeProperty()">Show Answer</button>
+        <span id="answer24"></span>
 
-        <!-- Exercise 25 -->
-        <h2>25. List all properties and values of an object.</h2>
-        <p>
-            <button onclick="listProperties()">Show Properties</button>
-            <span id="propertiesList"></span>    
-        </p>
+        <h2>25. A function to list all properties and values of a JavaScript object.</h2>
+        <button onclick="listProperties()">Show Answer</button>
+        <span id="answer25"></span>
 
-        <!-- Exercise 26 -->
-        <h2>26. Merge two objects into one.</h2>
-        <p>
-            <button onclick="mergeObjects()">Show Merged Object</button>
-            <span id="mergedObject"></span>    
-        </p>
+        <h2>26. A function to merge two objects into one.</h2>
+        <button onclick="mergeObjects()">Show Answer</button>
+        <span id="answer26"></span>
 
-        <!-- Exercise 27 -->
-        <h2>27. Create a function that returns the keys of an object.</h2>
-        <p>
-            <button onclick="getObjectKeys()">Show Keys</button>
-            <span id="objectKeys"></span>    
-        </p>
+        <h2>27. A function to check if a property exists in an object.</h2>
+        <input type="text" id="propertyCheckInput" placeholder="Enter property">
+        <button onclick="checkObjectProperty()">Show Answer</button>
+        <span id="answer27"></span>
 
-        <!-- Exercise 28 -->
-        <h2>28. Create a function that returns the values of an object.</h2>
-        <p>
-            <button onclick="getObjectValues()">Show Values</button>
-            <span id="objectValues"></span>    
-        </p>
+        <h2>28. A function to clone an object without referencing the original one.</h2>
+        <button onclick="cloneObject()">Show Answer</button>
+        <span id="answer28"></span>
 
-        <!-- Exercise 29 -->
-        <h2>29. Check if an object has a specific property.</h2>
-        <p>
-            <input type="text" id="propertyCheckInput" placeholder="Enter property">
-            <button onclick="checkObjectProperty()">Check Property</button>
-            <span id="propertyCheckResult"></span>    
-        </p>
+        <h2>29. A function that loops through an array of objects and prints a specific property of each object.</h2>
+        <button onclick="printObjectProperty()">Show Answer</button>
+        <span id="answer29"></span>
 
-        <!-- Exercise 30 -->
-        <h2>30. Create a copy of an object.</h2>
-        <p>
-            <button onclick="copyObject()">Show Copied Object</button>
-            <span id="copiedObject"></span>    
-        </p>
+        <h2>30. A function that updates a specific property of an object based on user input.</h2>
+        <input type="text" id="updatePropertyInput" placeholder="Enter new value">
+        <button onclick="updateProperty()">Show Answer</button>
+        <span id="answer30"></span>
 
-        <!-- Exercise 31 -->
-        <h2>31. Create a function that deep copies an object.</h2>
-        <p>
-            <button onclick="deepCopyObject()">Show Deep Copied Object</button>
-            <span id="deepCopiedObject"></span>    
-        </p>
+        <h2>31. A function that takes a string and reverses the string.</h2>
+        <input type="text" id="stringToReverse" placeholder="Enter string">
+        <button onclick="reverseString()">Show Answer</button>
+        <span id="answer31"></span>
 
-        <!-- Exercise 32 -->
-        <h2>32. Create an array of objects representing cars.</h2>
-        <p>
-            <button onclick="createCarsArray()">Show Cars Array</button>
-            <span id="carsArray"></span>    
-        </p>
+        <h2>32. A function to count the number of vowels in a given string.</h2>
+        <input type="text" id="vowelString" placeholder="Enter string">
+        <button onclick="countVowels()">Show Answer</button>
+        <span id="answer32"></span>
 
-        <!-- Exercise 33 -->
-        <h2>33. Find a specific car object in an array by its property.</h2>
-        <p>
-            <input type="text" id="carSearchInput" placeholder="Enter car model">
-            <button onclick="findCar()">Find Car</button>
-            <span id="foundCar"></span>    
-        </p>
+        <h2>33. A function to convert a string to uppercase without using built-in methods.</h2>
+        <input type="text" id="uppercaseString" placeholder="Enter string">
+        <button onclick="convertToUpper()">Show Answer</button>
+        <span id="answer33"></span>
 
-        <!-- Exercise 34 -->
-        <h2>34. Create a function that returns an array of car models.</h2>
-        <p>
-            <button onclick="getCarModels()">Show Car Models</button>
-            <span id="carModelsList"></span>    
-        </p>
+        <h2>34. A function to find the length of a string without using .length.</h2>
+        <input type="text" id="lengthString" placeholder="Enter string">
+        <button onclick="findStringLength()">Show Answer</button>
+        <span id="answer34"></span>
 
-        <!-- Exercise 35 -->
-        <h2>35. Create a function that filters cars by a specific property value.</h2>
-        <p>
-            <button onclick="filterCars()">Show Filtered Cars</button>
-            <span id="filteredCars"></span>    
-        </p>
+        <h2>35. A function to replace all spaces with hyphens in a string.</h2>
+        <input type="text" id="hyphenString" placeholder="Enter string">
+        <button onclick="replaceSpaces()">Show Answer</button>
+        <span id="answer35"></span>
 
-        <!-- Exercise 36 -->
-        <h2>36. Create a function that sorts cars by a specific property.</h2>
-        <p>
-            <button onclick="sortCars()">Show Sorted Cars</button>
-            <span id="sortedCars"></span>    
-        </p>
+        <h2>36. A function to extract the first 10 characters from a string.</h2>
+        <input type="text" id="extractString" placeholder="Enter string">
+        <button onclick="extractFirst10()">Show Answer</button>
+        <span id="answer36"></span>
 
-        <!-- Exercise 37 -->
-        <h2>37. Create a function that returns the average price of all cars.</h2>
-        <p>
-            <button onclick="averageCarPrice()">Show Average Price</button>
-            <span id="averageCarPrice"></span>    
-        </p>
+        <h2>37. A function to find and replace a word in a string.</h2>
+        <input type="text" id="replaceString" placeholder="Enter string">
+        <input type="text" id="wordToReplace" placeholder="Enter word to replace">
+        <input type="text" id="newWord" placeholder="Enter new word">
+        <button onclick="findAndReplace()">Show Answer</button>
+        <span id="answer37"></span>
 
-        <!-- Exercise 38 -->
-        <h2>38. Create a function that finds the most expensive car.</h2>
-        <p>
-            <button onclick="findMostExpensiveCar()">Show Most Expensive Car</button>
-            <span id="mostExpensiveCar"></span>    
-        </p>
+        <h2>38. A function to split a string into an array of words.</h2>
+        <input type="text" id="splitString" placeholder="Enter string">
+        <button onclick="splitIntoWords()">Show Answer</button>
+        <span id="answer38"></span>
 
-        <!-- Exercise 39 -->
-        <h2>39. Create a function that returns the count of cars by manufacturer.</h2>
-        <p>
-            <button onclick="countCarsByManufacturer()">Show Count by Manufacturer</button>
-            <span id="countByManufacturer"></span>    
-        </p>
+        <h2>39. A function to remove all numbers from a string.</h2>
+        <input type="text" id="removeNumbersString" placeholder="Enter string">
+        <button onclick="removeNumbers()">Show Answer</button>
+        <span id="answer39"></span>
 
-        <!-- Exercise 40 -->
-        <h2>40. Create a function that groups cars by their manufacturer.</h2>
-        <p>
-            <button onclick="groupCarsByManufacturer()">Show Grouped Cars</button>
-            <span id="groupedCars"></span>    
-        </p>
+        <h2>40. A function to insert another string in the existing starting at position 7.</h2>
+        <input type="text" id="insertString" placeholder="Enter original string">
+        <input type="text" id="stringToInsert" placeholder="Enter string to insert">
+        <button onclick="insertStringAtPosition()">Show Answer</button>
+        <span id="answer40"></span>
 
-        <!-- Exercise 41 -->
-        <h2>41. Create a function that adds a new car to the array.</h2>
-        <p>
-            <input type="text" id="newCarInput" placeholder="Enter new car model">
-            <button onclick="addNewCar()">Add New Car</button>
-            <span id="newCarResult"></span>    
-        </p>
+        <h2>41. A JavaScript function that changes the background color of a webpage when a button is clicked.</h2>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
 
-        <!-- Exercise 42 -->
-        <h2>42. Create a function that removes a car from the array.</h2>
-        <p>
-            <input type="text" id="removeCarInput" placeholder="Enter car model to remove">
-            <button onclick="removeCar()">Remove Car</button>
-            <span id="removedCarResult"></span>    
-        </p>
+        <h2>42. A JavaScript function to hide an HTML element when a button is clicked.</h2>
+        <button onclick="hideElement()">Hide Element</button>
 
-        <!-- Exercise 43 -->
-        <h2>43. Create a function that updates a car's information.</h2>
-        <p>
-            <input type="text" id="updateCarInput" placeholder="Enter car model to update">
-            <button onclick="updateCar()">Update Car</button>
-            <span id="updatedCarResult"></span>    
-        </p>
+        <h2>43. A JavaScript function to create a new paragraph element and append it to the body.</h2>
+        <button onclick="createParagraph()">Create Paragraph</button>
 
-        <!-- Exercise 44 -->
-        <h2>44. Create a function that lists all car details.</h2>
-        <p>
-            <button onclick="listAllCarDetails()">Show All Car Details</button>
-            <span id="allCarDetails"></span>    
-        </p>
+        <h2>44. A JavaScript function to remove all list items from an unordered list.</h2>
+        <button onclick="removeListItems()">Remove List Items</button>
 
-        <!-- Exercise 45 -->
-        <h2>45. Create a function that finds a car by its ID.</h2>
-        <p>
-            <input type="text" id="carIdInput" placeholder="Enter car ID">
-            <button onclick="findCarById()">Find Car by ID</button>
-            <span id="foundCarById"></span>    
-        </p>
+        <h2>45. A JavaScript function to change the text content of a specific HTML element.</h2>
+        <input type="text" id="newText" placeholder="Enter new text">
+        <button onclick="changeTextContent()">Change Text</button>
 
-        <!-- Exercise 46 -->
-        <h2>46. Create a function that checks if two cars are equal.</h2>
-        <p>
-            <input type="text" id="car1Input" placeholder="Enter first car model">
-            <input type="text" id="car2Input" placeholder="Enter second car model">
-            <button onclick="checkIfCarsAreEqual()">Check Equality</button>
-            <span id="carEqualityResult"></span>    
-        </p>
+        <h2>46. A JavaScript function to toggle a CSS class on an HTML element.</h2>
+        <button onclick="toggleCSSClass()">Toggle CSS Class</button>
 
-        <!-- Exercise 47 -->
-        <h2>47. Create a function that lists all unique car manufacturers.</h2>
-        <p>
-            <button onclick="listUniqueManufacturers()">Show Unique Manufacturers</button>
-            <span id="uniqueManufacturers"></span>    
-        </p>
+        <h2>47. A JavaScript function to count the number of divs on a webpage.</h2>
+        <button onclick="countDivs()">Show Answer</button>
+        <span id="answer47"></span>
 
-        <!-- Exercise 48 -->
-        <h2>48. Create a function that checks if a specific car is in the array.</h2>
-        <p>
-            <input type="text" id="specificCarInput" placeholder="Enter car model">
-            <button onclick="checkIfCarExists()">Check Car Existence</button>
-            <span id="carExistenceResult"></span>    
-        </p>
+        <h2>48. A JavaScript function to get the value of a text input field and display it in a paragraph.</h2>
+        <input type="text" id="textInput" placeholder="Enter text">
+        <button onclick="displayInputValue()">Show Answer</button>
+        <span id="answer48"></span>
 
-        <!-- Exercise 49 -->
-        <h2>49. Create a function that counts the total number of cars.</h2>
-        <p>
-            <button onclick="countTotalCars()">Show Total Cars</button>
-            <span id="totalCarsCount"></span>    
-        </p>
+        <h2>49. A JavaScript function to create a table with 3 rows and 3 columns, and populate it with numbers of your choice.</h2>
+        <button onclick="createTable()">Create Table</button>
 
-        <!-- Exercise 50 -->
-        <h2>50. Create a function that returns an array of cars below a specific price.</h2>
-        <p>
-            <input type="number" id="priceInput" placeholder="Enter price">
-            <button onclick="filterCarsByPrice()">Show Cars Below Price</button>
-            <span id="carsBelowPrice"></span>    
-        </p>
+        <h2>50. A JavaScript function to validate a form (check if name, email, and password fields are filled).</h2>
+        <button onclick="validateForm()">Validate Form</button>
     </div>
 
     <script src="./answers.js"></script>
