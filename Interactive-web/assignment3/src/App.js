@@ -36,7 +36,7 @@ import ModuleForm from "./components/ModuleForm";
 
 function App() {
   return (
-    <div style={{ margin: "10px" }}>
+    <div style={{ margin: "70px" }}>
       <h1>1. Components</h1>
       <h4>1.</h4>
       <Welcome />
@@ -100,19 +100,12 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/products/:productID" element={<ProductDetails />} />
             <Route path="/blog" element={<Blog />}>
-              {/* Nested route for individual posts */}
               <Route path=":postID" element={<Post />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </Router>
-      {/*  <h4>17. </h4>
-      <h4>
-        <span style={{ color: "red", fontSize: "25px" }}>*</span>18.{" "}
-      </h4>
-      <h4>19. </h4>
-      <h4>20. </h4> */}
       <h1>5. React.memo</h1>
       <h4>21. </h4>
       <ParentMemo />

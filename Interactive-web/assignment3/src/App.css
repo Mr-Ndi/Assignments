@@ -1,6 +1,12 @@
 /* App.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin-left: 3em;
 }
+.component {
+    border: 2px solid #A9A9A9; /* Changed color to a darker gray */
+    border-radius: 8px; /* Increased border-radius for a softer corner */
+    padding: 8px; /* Increased padding for more space inside */
+    margin-bottom: 5px; /* Increased margin for more space below */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  }
+  
