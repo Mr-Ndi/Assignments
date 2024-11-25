@@ -1,36 +1,17 @@
-import React, { useState, memo } from 'react';
+import React from "react";
 
-const TodoItem = memo(({ todo }) => {
-  console.log('TodoItem render');
-  return <li>{todo}</li>;
-});
-
-function TodoList() {
-  const [todos, setTodos] = useState([]);
-  const [input, setInput] = useState('');
-
-  const addTodo = () => {
-    if (input) {
-      setTodos([...todos, input]);
-      setInput('');
-    }
-  };
-
+function TodoList({ tasks }) {
+  console.log("TodoList component rendered!");
   return (
-    <div>
-      <input
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Add todo"
-      />
-      <button onClick={addTodo}>Add</button>
+    <div className="comp">
+      <h2>Task List</h2>
       <ul>
-        {todos.map((todo, index) => (
-          <TodoItem key={index} todo={todo} />
+        {tasks.map((task, index) => (
+          <li key={index}>{task}</li>
         ))}
       </ul>
     </div>
   );
 }
 
-export default TodoList; 
+export default React.memo(TodoList);
